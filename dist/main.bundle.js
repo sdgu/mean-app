@@ -277,12 +277,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = __webpack_require__(0);
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "Tour";
+        this.title = "Tour idgi now";
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: "my-app",
-            template: "\n\t\t<h1>{{title}}</h1>\n\t\t<nav>\n\t\t\t<a routerLink=\"/dashboard\">Dashboard</a>\n\t\t\t<a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n\n\t\t</nav>\n\t\t<router-outlet></router-outlet>\n\t",
+            template: "\n\n\t\t<h1>{{title}} wtf?</h1>\n\t\t<nav>\n\t\t\t<a routerLink=\"/dashboard\">Dashboard</a>\n\t\t\t<a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n\n\t\t</nav>\n\t\t<router-outlet></router-outlet>\n\t",
             styles: [__webpack_require__(645)]
         }), 
         __metadata('design:paramtypes', [])
