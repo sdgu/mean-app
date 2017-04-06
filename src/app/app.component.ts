@@ -5,7 +5,8 @@ import {Component} from "@angular/core";
 	selector: "my-app",
 	template:
 	`
-		<h1>{{title}}</h1>
+
+		<h1>{{title}} wtf?</h1>
 		<nav>
 			<a routerLink="/dashboard">Dashboard</a>
 			<a routerLink="/heroes" routerLinkActive="active">Heroes</a>
@@ -18,5 +19,5 @@ import {Component} from "@angular/core";
 
 export class AppComponent
 {
-	title = "Tour";
+	title = "Tour idgi now";
 }
