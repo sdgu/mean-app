@@ -19,6 +19,8 @@ export class HeroesComponent implements OnInit
 { 
 	title = "Tour of heroes";
 	heroes: Hero[];
+
+	mode = "Observable"
 	
 	selectedHero: Hero;
 
@@ -26,11 +28,18 @@ export class HeroesComponent implements OnInit
               private router: Router){}
 
 
-	getHeroes(): void
+	getHeroes()
 	{
-		this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+		// this.heroService.getHeroes().then((heroes) => 
+		// {
+		// 	alert("some promise things then" + heroes);
+		// 	this.heroes = heroes
+		// });
+		this.heroService.getHeroes().subscribe(heroes =>
+		{
+			this.heroes = heroes;
+		})
 	}
-
 	ngOnInit(): void
 	{
 		this.getHeroes();

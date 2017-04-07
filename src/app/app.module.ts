@@ -13,8 +13,8 @@ import {HeroService} from "./hero.service";
 
 import {AppRoutingModule} from "./app-routing.module";
 
-import {InMemoryWebApiModule} from "angular-in-memory-web-api";
-import {InMemoryDataService} from "./in-memory-data.service";
+// import {InMemoryWebApiModule} from "angular-in-memory-web-api";
+// import {InMemoryDataService} from "./in-memory-data.service";
 
 
 
@@ -26,7 +26,7 @@ import {InMemoryDataService} from "./in-memory-data.service";
 	  BrowserModule,
 	  FormsModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService),
+    // InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule
   ],
   declarations: 

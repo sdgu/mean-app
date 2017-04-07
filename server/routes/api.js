@@ -25,8 +25,16 @@ router.get("/pokedex", (req, res) =>
 		id: 69421,
 		name: "Pastaman"
 		
-	}]
-	res.send({heroes});
+	},
+     {
+          id: 420,
+          name: "Schweed Guy"
+     },
+     {id: 11, name: 'Mr. Nice'},
+     {id: 12, name: 'Narco'},
+     {id: 13, name: 'Bombasto'},
+     {id: 14, name: 'Celeritas'}]
+	res.json(heroes);
 });
 
 module.exports = router;

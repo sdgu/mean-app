@@ -14,6 +14,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {id: 20, name: 'Tornado'},
       {id: 42169, name: "Pastaman"}
     ];
+    // alert(heroes[0].id);
     return {heroes};
   }
 }
