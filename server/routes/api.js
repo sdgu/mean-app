@@ -16,16 +16,12 @@ const pokedex = require("./../data/pokedex.js");
      //    color: 'White',
      //    eggGroups: [Object] },
 
-
-
-router.get("/pokedex", (req, res) =>
-{
-	let heroes = 
-	[{
-		id: 69421,
-		name: "Pastaman"
-		
-	},
+const heroes = 
+     [{
+          id: 69421,
+          name: "Pastaman"
+          
+     },
      {
           id: 420,
           name: "Schweed Guy"
@@ -34,7 +30,31 @@ router.get("/pokedex", (req, res) =>
      {id: 12, name: 'Narco'},
      {id: 13, name: 'Bombasto'},
      {id: 14, name: 'Celeritas'}]
+
+router.get("/pokedex", (req, res) =>
+{
 	res.json(heroes);
 });
+
+
+
+
+router.get("/pokedex/:id", (req, res) =>
+{
+     // console.log(req.params.id);
+
+     for (var i = 0; i < heroes.length; i++)
+     {
+          hero = heroes[i];
+          // console.log(hero.id);
+          if (hero.id == req.params.id)
+          {
+               // console.log("o.o");
+               res.json(hero);
+          }
+     }
+
+     // console.log(heroes.find(hero => hero.id === req.params.id));
+})
 
 module.exports = router;
